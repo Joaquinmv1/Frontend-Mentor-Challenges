@@ -14,8 +14,9 @@
 
 body {
   display: grid;
-  place-items: center;
+  place-content: center;
   min-height: 100vh;
+  min-width: 100vh;
   font-family: var(--font-family);
   font-size: 15px;
   background-color: hsl(212, 45%, 89%);
