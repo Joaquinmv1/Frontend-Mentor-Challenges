@@ -33,6 +33,7 @@ body {
 
 .container-modal {
   display: flex;
+  justify-self: center;
   height: 500px;
   background-color: #fff;
   border-radius: 30px;
@@ -51,6 +52,48 @@ body {
   border-radius: 30px;
   background-color: var(--Light-slate-blue);
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media screen and (max-width:375px) {
+  body{
+    display: block;
+  }
+  .container-modal{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content-left{
+    width: 100%;
+    gap: 20px;
+    border-radius: 0 0 30px 30px;
+    margin: 0 auto;
+  }
+
+  .content-rigth{
+    width: 300px;
+  }
+
+  /* .stats-container{
+    display: flex;
+    width: 300px;
+  } */
+
+  .content-left-p{
+    width: 100%;
+    padding: .7rem;
+  }
+
+  .content-left h4{
+    padding: .9rem;
+  }
+
+  .content-rigth h3{
+    padding-block: .5rem;
+  }
 }
 
 .content-left h4 {
@@ -82,17 +125,21 @@ body {
 
 .content-left-h3 {
   font-size: 1.5rem;
-  font-weight:800;
+  font-weight: 800;
 }
 
 .content-rigth {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 400px;
+  width: 365px;
   border-radius: 30px;
   gap: 30px;
   background-color: #fff;
+}
+
+.stats-container{
+  width: 100%;  
 }
 
 .content-rigth h3 {
@@ -162,4 +209,11 @@ body {
   border-radius: 100px;
   font-weight: 700;
   font-size: 1rem;
+  cursor: pointer;
+  border: none;
 }
+.content-rigth button:active{
+  background-color: var(--Light-royal-blue);
+}
+
+
